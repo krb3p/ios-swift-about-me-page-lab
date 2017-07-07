@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutPage" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2cx-rA-cwj">
+                                <rect key="frame" x="24" y="60" width="331" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ypW-Bl-IGY">
+                                <rect key="frame" x="28" y="141" width="323" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0RA-Ja-Vho">
+                                <rect key="frame" x="28" y="170" width="323" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Favorite movies: " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FcY-CG-sCg">
+                                <rect key="frame" x="24" y="199" width="327" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="VVb-H2-6K7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mbj-IN-hGa">
+                                <rect key="frame" x="24" y="335" width="327" height="324"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hS6-iU-t5B">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="324"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <mutableString key="text">Biography: Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hS6-iU-t5B" secondAttribute="bottom" id="5Bn-Nn-izp"/>
+                                    <constraint firstItem="hS6-iU-t5B" firstAttribute="centerX" secondItem="Mbj-IN-hGa" secondAttribute="centerX" id="HEy-YK-hez"/>
+                                    <constraint firstItem="hS6-iU-t5B" firstAttribute="leading" secondItem="Mbj-IN-hGa" secondAttribute="leading" id="JD0-I3-Yuq"/>
+                                    <constraint firstItem="hS6-iU-t5B" firstAttribute="top" secondItem="Mbj-IN-hGa" secondAttribute="top" id="UsW-iB-AEl"/>
+                                    <constraint firstItem="hS6-iU-t5B" firstAttribute="centerY" secondItem="Mbj-IN-hGa" secondAttribute="centerY" id="YAq-i1-EMy"/>
+                                    <constraint firstAttribute="trailing" secondItem="hS6-iU-t5B" secondAttribute="trailing" id="bkV-to-Cm6"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ypW-Bl-IGY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="4Ao-LW-ivz"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ypW-Bl-IGY" secondAttribute="trailing" constant="8" id="7Ew-57-g1j"/>
+                            <constraint firstItem="2cx-rA-cwj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="7Mv-kh-oG3"/>
+                            <constraint firstItem="ypW-Bl-IGY" firstAttribute="leading" secondItem="2cx-rA-cwj" secondAttribute="trailing" constant="-327" id="84e-RB-MJ5"/>
+                            <constraint firstItem="2cx-rA-cwj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="AT8-S5-9k3"/>
+                            <constraint firstItem="FcY-CG-sCg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="B2V-kN-qkj"/>
+                            <constraint firstItem="FcY-CG-sCg" firstAttribute="top" secondItem="0RA-Ja-Vho" secondAttribute="bottom" constant="8" id="Bco-WE-H8D"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Mbj-IN-hGa" secondAttribute="trailing" constant="8" id="CtF-ZW-pCl"/>
+                            <constraint firstItem="0RA-Ja-Vho" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="DHI-EY-kl0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FcY-CG-sCg" secondAttribute="trailing" constant="8" id="DpD-ew-Pgk"/>
+                            <constraint firstItem="Mbj-IN-hGa" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="HeG-wj-DxP"/>
+                            <constraint firstItem="Mbj-IN-hGa" firstAttribute="top" secondItem="FcY-CG-sCg" secondAttribute="bottom" constant="8" id="KAq-ow-J7G"/>
+                            <constraint firstItem="0RA-Ja-Vho" firstAttribute="top" secondItem="ypW-Bl-IGY" secondAttribute="bottom" constant="8" id="aNx-dS-HCc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0RA-Ja-Vho" secondAttribute="trailing" constant="8" id="jiG-bS-mBZ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Mbj-IN-hGa" secondAttribute="bottom" constant="8" id="p77-e1-CMZ"/>
+                            <constraint firstItem="ypW-Bl-IGY" firstAttribute="top" secondItem="2cx-rA-cwj" secondAttribute="bottom" constant="60" id="pVg-Yd-skq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ageLabel" destination="0RA-Ja-Vho" id="BGb-cy-A4f"/>
+                        <outlet property="biographyTextView" destination="hS6-iU-t5B" id="TF2-DC-9Tj"/>
+                        <outlet property="favoriteMoviesTextView" destination="FcY-CG-sCg" id="l01-fP-mwS"/>
+                        <outlet property="nameLabel" destination="ypW-Bl-IGY" id="Bvb-rk-ng2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
